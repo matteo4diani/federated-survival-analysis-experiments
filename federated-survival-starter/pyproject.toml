@@ -1,11 +1,19 @@
 [tool.pdm]
 
 [project]
-# PEP 621 project metadata
-# See https://www.python.org/dev/peps/pep-0621/
-dependencies = ["DeepSurv==0.1.0", "numpy==1.24.2", "torch==2.0.0"]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "Matteo Fordiani", email = "matteofordiani@gmail.com"},
+]
+dependencies = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.1",
+    "scikit-survival>=0.20.0",
+    "matplotlib>=3.7.1",
+    "optuna>=3.1.1",
+    "pycox>=0.2.3",
+]
 requires-python = ">=3.11"
-
-[build-system]
-requires = ["pdm-backend"]
-build-backend = "pdm.backend"
+license = {text = "MIT"}
