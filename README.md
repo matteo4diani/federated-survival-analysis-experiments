@@ -13,16 +13,30 @@ To install each project run:
 pdm use 3.8 && pdm install
 ```
 
-Tu run scripts that you would run with `python3` use:
+Tu run scripts that you would run with `python3` use `pdm run` instead:
 
 ```sh
-pdm run <your script>
+pdm run <your command>
 ```
 
-To run modules (e.g. scripts that you would run with `python3 -m`) use:
+> Examples:
+> ```sh
+> pdm run main.py
+> ```
+>
+> ```sh
+> pdm run jupyter kernelspec list
+> ```
+
+To run modules (e.g. scripts that you would run with `python3 -m`) use `pdm run python3 -m` instead:
 
 ```sh
-pdm run python3 -m <your script>
+pdm run python3 -m <your command>
 ```
+
+> Example:
+> ```sh
+> pdm run python3 -m ipykernel install --help
+> ```
 
 🐈
